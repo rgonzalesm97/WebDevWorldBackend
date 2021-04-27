@@ -162,10 +162,10 @@ const ArticlesService = {
         }
 
         var file_path = req.files.file0.path;
+
             // * ADVERTENCIA * EN LINUX O MAC
             // var file_split = file_path.split('/');
-
-        var file_name = file_path.split('\\')[2];
+        var file_name = file_path.split('/')[2];
         var file_ext = file_name.split('.')[1];
 
         if(file_ext != 'png' && file_ext != 'jpg' && file_ext != 'jpeg' && file_ext != 'gif'){
