@@ -163,8 +163,11 @@ const ArticlesService = {
 
         var file_path = req.files.file0.path;
 
-            // * ADVERTENCIA * EN LINUX O MAC
+            // * ADVERTENCIA * 
+            // EN LINUX O MAC
             // var file_split = file_path.split('/');
+            // EN WINDOWS
+            // var file_split = file_path.split('\\');
         var file_name = file_path.split('/')[2];
         var file_ext = file_name.split('.')[1];
 
