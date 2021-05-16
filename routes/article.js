@@ -45,7 +45,7 @@ router.get('/get-image/:image', ArticlesService.getImage);
 router.get('/search/:search', ArticlesService.searchArticle);
 
 //-----------------------------------------AUTH-------------------------------------------
-/*
+
 //Login
 router.post('/login', [
     check('email', 'email is invalid').isEmail(),
@@ -63,5 +63,5 @@ router.post('/register', [
 
 //Renew token
 router.get('/renew', validateJWT, AuthService.renew);
-*/
+
 module.exports = router;
